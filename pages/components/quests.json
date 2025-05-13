@@ -1,0 +1,14 @@
+{
+  "quests": [
+    {
+      "id": 1,
+      "creator": "bedrocktime1234@gmail.com",
+      "object": "Информатика",
+      "task1": "info5",
+      "task2": "info6",
+      "task3": "info7",
+      "task4": "info8",
+      "complete": "Выполнено"
+    }
+  ]
+}

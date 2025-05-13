@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { useState } from "react"
 
-const Task1 = () => {
-    const [answer, newAnswer] = useState("")
+const Task6 = () => {
+    const [answer, newAnswer] = useState(null)
     const [pr, newPr] = useState(0)
     const id = localStorage.getItem("id")
 
@@ -13,16 +13,16 @@ const Task1 = () => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ task: `math1`, value: isCorrect ? 1 : 0 }),
+            body: JSON.stringify({ task: `math2`, value: isCorrect ? 1 : 0 }),
           });
     
           if (response.ok) {
-            console.log(`Task 1 updated successfully!`);
+            console.log(`Task 2 updated successfully!`);
           } else {
-            console.error(`Failed to update task 1:`, response.status);
+            console.error(`Failed to update task 2:`, response.status);
           }
         } catch (error) {
-          console.error(`Error sending request for task 1:`, error);
+          console.error(`Error sending request for task 2:`, error);
         }
       };
 
@@ -34,7 +34,7 @@ const Task1 = () => {
                 </div>
             )
         } else {
-            if (answer.toLowerCase() === "уравнение") {
+            if (answer === "5") {
                 updateTaskCompletion(true)
                 return(
                     <div>
@@ -46,7 +46,7 @@ const Task1 = () => {
                 updateTaskCompletion(false)
                 return(
                     <div>
-                        <h1 className="task_h1">Не правильно, правильный ответ: уравнение</h1>
+                        <h1 className="task_h1">Не правильно, правильный ответ: 5</h1>
                         <Link href={`../${id}`} className="tasklink">Назад</Link> 
                     </div>
                 )
@@ -58,8 +58,8 @@ const Task1 = () => {
       <div className="tm_osn_divМатематика">
         <div className="task1_div">
             <div>
-                <h1 className="task_h1">Вопрос</h1>
-                <p className="task_p">Что является равенством, содержащим неизвестное значение, которое надо найти?</p>
+                <h1 className="task_h1">Задача</h1>
+                <p className="task_p">В прямоугольном треугольнике катеты равны 3 и 4. Чему равна гипотенуза?</p>
             </div>
             <div className="task_answer_main">
                 <div className="task_answer">
@@ -73,4 +73,4 @@ const Task1 = () => {
     )
   }
   
-  export default Task1
+  export default Task6

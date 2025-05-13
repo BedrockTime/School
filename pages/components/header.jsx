@@ -12,10 +12,10 @@ const Header = () => {
         </div>
         <div className="header_text">
           <h2 className="header_text_h2">Веб-квесты для обучения</h2>
-          <p className="header_text_p">Загрузите свои собственные задания по любой дисциплине.</p>
-          <p className="header_text_p"> Ученикам предстоит “выбраться из комнаты”, решив все задачи.</p>
+          <p className="header_text_p">Создайте свой собственный квест из готовых задач</p>
+          <p className="header_text_p">Ученикам предстоит “найти предметы”, решив все задачи</p>
           <div className="div_button">
-            <button className="header_text_button">СОЗДАТЬ КВЕСТ</button>
+            <Link href="/components/quests" className="header_text_button">КВЕСТЫ</Link>
           </div>
         </div>
         <div className="line" />

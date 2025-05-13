@@ -1,127 +1,172 @@
 import Link from "next/link"
 import tasks from "./tasks.json"
+import quests from "./quests.json"
 
 const TaskComplete = () => {
-    let task_1 = tasks.tasks.task1
-    let task_2 = tasks.tasks.task2
-    let task_3 = tasks.tasks.task3
-    let task_4 = tasks.tasks.task4
+  let task_1 = tasks.tasks.math1
+  let task_2 = tasks.tasks.math2
+  let task_3 = tasks.tasks.math3
+  let task_4 = tasks.tasks.math4
+  const quest = quests.quests[localStorage.getItem("id")-1]
+  const classtag = quest.object
 
-    if (task_1 === null) {
-        task_1 = 0
-    }
+  if (task_1 === null) {
+    task_1 = 0
+  }
 
-    if (task_2 === null) {
-        task_2 = 0
-    }
+  if (task_2 === null) {
+    task_2 = 0
+  }
 
-    if (task_3 === null) {
-        task_3 = 0
-    }
+  if (task_3 === null) {
+    task_3 = 0
+  }
 
-    if (task_4 === null) {
-        task_4 = 0
-    }
-    const compl = task_1 + task_2 + task_3 + task_4
+  if (task_4 === null) {
+    task_4 = 0
+  }
 
-    const updateTaskCompletion1 = async () => {
-        try {
-          const response = await fetch("/api/update-tasks", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ task: `task1`, value: null }),
-          });
-    
-          if (response.ok) {
-            console.log(`Task 1 updated successfully!`);
-          } else {
-            console.error(`Failed to update task 1:`, response.status);
-          }
-        } catch (error) {
-          console.error(`Error sending request for task 1:`, error);
-        }
-      };
+  const compl = task_1 + task_2 + task_3 + task_4
 
-      const updateTaskCompletion2 = async () => {
-        try {
-          const response = await fetch("/api/update-tasks", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ task: `task2`, value: null}),
-          });
-    
-          if (response.ok) {
-            console.log(`Task 2 updated successfully!`);
-          } else {
-            console.error(`Failed to update task 2:`, response.status);
-          }
-        } catch (error) {
-          console.error(`Error sending request for task 2:`, error);
-        }
-      };
-
-      const updateTaskCompletion3 = async () => {
-        try {
-          const response = await fetch("/api/update-tasks", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ task: `task3`, value: null}),
-          });
-    
-          if (response.ok) {
-            console.log(`Task 3 updated successfully!`);
-          } else {
-            console.error(`Failed to update task 3:`, response.status);
-          }
-        } catch (error) {
-          console.error(`Error sending request for task 3:`, error);
-        }
-      };
-
-      const updateTaskCompletion4 = async () => {
-        try {
-          const response = await fetch("/api/update-tasks", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ task: `task4`, value: null}),
-          });
-    
-          if (response.ok) {
-            console.log(`Task 3 updated successfully!`);
-          } else {
-            console.error(`Failed to update task 4:`, response.status);
-          }
-        } catch (error) {
-          console.error(`Error sending request for task 4:`, error);
-        }
-      };
-
-      const kostil = () =>{
-        updateTaskCompletion1()
-        updateTaskCompletion2()
-        updateTaskCompletion3()
-        updateTaskCompletion4()
+  const updateTaskCompletion1 = async () => {
+    try {
+      const response = await fetch("/api/update-tasks", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ task: `math1`, value: null }),
+      });
+  
+      if (response.ok) {
+        console.log(`Task 1 updated successfully!`);
+      } else {
+        console.error(`Failed to update task 1:`, response.status);
       }
+      } catch (error) {
+        console.error(`Error sending request for task 1:`, error);
+      }
+    };
+
+    const updateTaskCompletion2 = async () => {
+      try {
+        const response = await fetch("/api/update-tasks", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ task: `math2`, value: null}),
+        });
+  
+        if (response.ok) {
+          console.log(`Task 2 updated successfully!`);
+        } else {
+          console.error(`Failed to update task 2:`, response.status);
+        }
+      } catch (error) {
+        console.error(`Error sending request for task 2:`, error);
+      }
+    };
+
+    const updateTaskCompletion3 = async () => {
+      try {
+        const response = await fetch("/api/update-tasks", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ task: `math3`, value: null}),
+        });
+  
+        if (response.ok) {
+          console.log(`Task 3 updated successfully!`);
+        } else {
+          console.error(`Failed to update task 3:`, response.status);
+        }
+      } catch (error) {
+        console.error(`Error sending request for task 3:`, error);
+      }
+    };
+
+    const updateTaskCompletion4 = async () => {
+      try {
+        const response = await fetch("/api/update-tasks", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ task: `math4`, value: null}),
+        });
+  
+        if (response.ok) {
+          console.log(`Task 4 updated successfully!`);
+        } else {
+          console.error(`Failed to update task 4:`, response.status);
+        }
+      } catch (error) {
+        console.error(`Error sending request for task 4:`, error);
+      }
+    };
+
+  const updateCompletionStatus = async (questId, newStatus) => {
+    try {
+      const response = await fetch("/api/update-quest", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          questId: questId,
+          newCompletionStatus: newStatus,
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Completion status updated!');
+      } else {
+        console.error('Failed to update completion status');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+    const kostil = () =>{
+      updateTaskCompletion1()
+      updateTaskCompletion2()
+      updateTaskCompletion3()
+      updateTaskCompletion4()
+      updateCompletionStatus(localStorage.getItem("id"), "Выполнено")
+      localStorage.setItem("id", null)
+    }
+
+    const Complete = () => {
+      if (compl < 4) {
+        return(
+          <div>
+              <h1 className="task_h1">Ой... Ты нашел не все предметы.</h1>
+              <h1 className="task_h1">Видимо придется выкручиваться как-то...</h1>
+              <h1 className="task_h1">Но всё равно спасибо!</h1>
+          </div>
+        )
+      } {
+        return(
+          <div>
+              <h1 className="task_h1">Спасибо тебе огромное!</h1>
+              <h1 className="task_h1">Обязательно воспользуюсь этими штуками.</h1>
+              <h1 className="task_h1">С меня ответы на К/Р по истории :)</h1>
+          </div>
+        )
+      }
+    }
 
     return(
-      <div className="tm_osn_div">
+      <div className={`tm_osn_div${classtag}`}>
         <div className="task1_div">
-            <div>
-                <h1 className="task_h1">Спасибо тебе огромное!</h1>
-                <h1 className="task_h1">Обязательно воспользуюсь этими штуками.</h1>
-                <h1 className="task_h1">С меня ответы на К/Р по истории :)</h1>
-            </div>
+            <Complete/>
             <div className="task_answer_main">
                 <h1 className="task_h1">Результат: {compl} из 4</h1>
-                <Link href="/" onClick={() => {kostil()}} className="compllink">Назад</Link>
+                <Link href="/components/quests" onClick={() => {kostil()}} className="compllink">Назад</Link>
             </div>
         </div>
       </div>

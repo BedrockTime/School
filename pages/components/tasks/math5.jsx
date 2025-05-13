@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 
-const Task1 = () => {
+const Task5 = () => {
     const [answer, newAnswer] = useState("")
     const [pr, newPr] = useState(0)
     const id = localStorage.getItem("id")
@@ -34,7 +34,7 @@ const Task1 = () => {
                 </div>
             )
         } else {
-            if (answer.toLowerCase() === "уравнение") {
+            if (answer.toLowerCase() === "равносторонний") {
                 updateTaskCompletion(true)
                 return(
                     <div>
@@ -46,7 +46,7 @@ const Task1 = () => {
                 updateTaskCompletion(false)
                 return(
                     <div>
-                        <h1 className="task_h1">Не правильно, правильный ответ: уравнение</h1>
+                        <h1 className="task_h1">Не правильно, правильный ответ: равносторонний</h1>
                         <Link href={`../${id}`} className="tasklink">Назад</Link> 
                     </div>
                 )
@@ -59,7 +59,7 @@ const Task1 = () => {
         <div className="task1_div">
             <div>
                 <h1 className="task_h1">Вопрос</h1>
-                <p className="task_p">Что является равенством, содержащим неизвестное значение, которое надо найти?</p>
+                <p className="task_p">Как называется треугольник, у которого все стороны равны?</p>
             </div>
             <div className="task_answer_main">
                 <div className="task_answer">
@@ -73,4 +73,4 @@ const Task1 = () => {
     )
   }
   
-  export default Task1
+  export default Task5

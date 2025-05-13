@@ -4,6 +4,7 @@ import { useState } from "react"
 const Task4 = () => {
     const [answer, newAnswer] = useState("")
     const [pr, newPr] = useState(0)
+    const id = localStorage.getItem("id")
 
     const updateTaskCompletion = async (isCorrect) => {
         try {
@@ -12,7 +13,7 @@ const Task4 = () => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ task: `task4`, value: isCorrect ? 1 : 0 }),
+            body: JSON.stringify({ task: `math4`, value: isCorrect ? 1 : 0 }),
           });
     
           if (response.ok) {
@@ -32,21 +33,21 @@ const Task4 = () => {
                     <h1 className="task_h1">Проверить</h1>
                 </div>
             )
-        } {
+        } else {
             if (answer === "3") {
                 updateTaskCompletion(true)
                 return(
                     <div>
                         <h1 className="task_h1">Правильно</h1>
-                        <Link href="../taskmain" className="tasklink">Назад</Link>
+                        <Link href={`../${id}`} className="tasklink">Назад</Link>
                     </div>
                 )
-            } {
+            } else {
                 updateTaskCompletion(false)
                 return(
                     <div>
                         <h1 className="task_h1">Не правильно, правильный ответ под номером: 3</h1>
-                        <Link href="../taskmain" className="tasklink">Назад</Link> 
+                        <Link href={`../${id}`} className="tasklink">Назад</Link> 
                     </div>
                 )
             }
@@ -54,7 +55,7 @@ const Task4 = () => {
     }
 
     return(
-      <div className="tm_osn_div">
+      <div className="tm_osn_divМатематика">
         <div className="task1_div">
             <div>
                 <h1 className="task_h1">Вопрос</h1>

@@ -80,8 +80,7 @@ code {
 }
 
 .header_text_button {
-  width: 151px;
-  height: 47px;
+  padding: 10px 10px 10px 10px;
   font-size: 18px;
   border-radius: 15px;
   border: 0px;
@@ -89,12 +88,11 @@ code {
   color: #373535;
   cursor: pointer;
   transition: all, 300ms;
+  text-decoration: none;
 }
 
 .header_text_button:hover {
-  width: 161px;
-  height: 53px;
-  padding: 1px;
+  padding: 13px 13px 13px 13px;
   font-size: 19px;
   border-radius: 17px;
 }
@@ -432,9 +430,9 @@ code {
   color: #ffffff;
   background-color: #696969;
   width: 200px;
-  height: 100px;
+  height: 50px;
   padding-left: 20px;
-  padding-top: 14px;
+  padding-top: 29px;
   border-radius: 35px;
 }
 
@@ -495,15 +493,6 @@ code {
   padding: 5px 5px 5px 5px;
 }
 
-.tm_osn_div {
-  background-image: url("./img/room4.jpg");
-  width: 1920px;
-  height: 926px;
-  background-size: cover;
-  position: absolute;
-  background-position: center;
-}
-
 .dimka {
   padding: 20px 20px 20px 20px;
   margin: 30px 0px 0px 30px;
@@ -547,7 +536,7 @@ code {
   background-size: cover;
 }
 
-.l1 {
+.l1Математика {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -562,7 +551,7 @@ code {
   margin: 230px 0px 0px 1050px;
 }
 
-.l2 {
+.l2Математика {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -577,7 +566,7 @@ code {
   margin: 20px 0px 0px 1430px;
 }
 
-.l3 {
+.l3Математика {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -592,7 +581,7 @@ code {
   margin: 180px 0px 0px 1360px;
 }
 
-.l4 {
+.l4Математика {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -698,4 +687,281 @@ code {
   text-decoration: none;
   margin-bottom: 0;
   font-family: "RussoOne";
+}
+
+.quests_div {
+  border-radius: 30px;
+  width: 75%;
+  height: 100%;
+  background-color:#696969 ;
+  padding: 30px 70px 30px 70px;
+}
+
+.quests_div_osn {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.quests_div_props {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #2B2B2B;
+  border-radius: 20px;
+  color: #ffffff;
+  align-items: center;
+  width: 700px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.quests_p {
+  margin-right: 20px;
+  font-family: "RussoOne";
+}
+
+.quests_div1 {
+  display: flex;
+  justify-content: space-between;
+  width: 314px;
+  margin-left: 10px;
+  align-items: center;
+  color: #ffffff;
+  font-family: "RussoOne";
+}
+
+.quests_div_props2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.per_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.linkquests {
+  color: #709b2a;
+  font-family: "RussoOne";
+  text-decoration: none;
+  margin-left: 100px;
+  margin-right: 73px;
+}
+
+.create_div {
+  border-radius: 30px;
+  width: 55%;
+  height: 100%;
+  background-color:#696969 ;
+  padding: 30px 70px 30px 70px;
+  height: 450px;
+}
+
+.create_div2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.create_text_button {
+  padding: 10px 10px 10px 10px;
+  width: 117px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 0px;
+  background: linear-gradient(to right, #94d132, #94d132, #4c6b19);
+  color: #373535;
+  cursor: pointer;
+  transition: all, 300ms;
+  text-decoration: none;
+}
+
+.create_text_button:hover {
+  padding: 13px 13px 13px 13px;
+  font-size: 19px;
+  border-radius: 17px;
+}
+
+.button_obj {
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 0px;
+  background: linear-gradient(to right, #94d132, #94d132, #4c6b19);
+  color: #373535;
+  cursor: pointer;
+}
+
+.create_object {
+  background-color: #2B2B2B;
+  width: 196px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  color: #FFFfff;
+}
+
+.obj_p {
+  width: max-content;
+  cursor: pointer;
+}
+
+.aqerr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aqerrp {
+  color: rgb(145, 0, 0);
+}
+
+.tm_osn_divМатематика {
+  background-image: url("./img/room4.jpg");
+  width: 1920px;
+  height: 926px;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+}
+
+.tm_osn_divФизика {
+  background-image: url("./img/room1.jpg");
+  width: 1920px;
+  height: 926px;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+}
+
+.l1Физика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 290px 0px 0px 320px;
+}
+
+.l2Физика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 190px 0px 0px 995px;
+}
+
+.l3Физика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 400px 0px 0px 1056px;
+}
+
+.l4Физика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 220px 0px 0px 1372px;
+}
+
+.tm_osn_divИнформатика {
+  background-image: url("./img/room3.jpg");
+  width: 1920px;
+  height: 926px;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+}
+
+.l1Информатика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 135px 0px 0px 195px;
+}
+
+.l2Информатика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 370px 0px 0px 560px;
+}
+
+.l3Информатика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 270px 0px 0px 770px;
+}
+
+.l4Информатика {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  background-image: url("./img/loupe.png");
+  background-color: #3EDA5080;
+  text-decoration: none;
+  border-color: #000000;
+  margin: 600px 0px 0px 1387px;
 }

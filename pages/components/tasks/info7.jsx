@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 
-const Task1 = () => {
+const Task7 = () => {
     const [answer, newAnswer] = useState("")
     const [pr, newPr] = useState(0)
     const id = localStorage.getItem("id")
@@ -13,16 +13,16 @@ const Task1 = () => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ task: `math1`, value: isCorrect ? 1 : 0 }),
+            body: JSON.stringify({ task: `math3`, value: isCorrect ? 1 : 0 }),
           });
     
           if (response.ok) {
-            console.log(`Task 1 updated successfully!`);
+            console.log(`Task 3 updated successfully!`);
           } else {
-            console.error(`Failed to update task 1:`, response.status);
+            console.error(`Failed to update task 3:`, response.status);
           }
         } catch (error) {
-          console.error(`Error sending request for task 1:`, error);
+          console.error(`Error sending request for task 3:`, error);
         }
       };
 
@@ -34,7 +34,7 @@ const Task1 = () => {
                 </div>
             )
         } else {
-            if (answer.toLowerCase() === "уравнение") {
+            if (answer === "1") {
                 updateTaskCompletion(true)
                 return(
                     <div>
@@ -46,7 +46,7 @@ const Task1 = () => {
                 updateTaskCompletion(false)
                 return(
                     <div>
-                        <h1 className="task_h1">Не правильно, правильный ответ: уравнение</h1>
+                        <h1 className="task_h1">Не правильно, правильный ответ под номером: 1</h1>
                         <Link href={`../${id}`} className="tasklink">Назад</Link> 
                     </div>
                 )
@@ -55,15 +55,19 @@ const Task1 = () => {
     }
 
     return(
-      <div className="tm_osn_divМатематика">
+      <div className="tm_osn_divИнформатика">
         <div className="task1_div">
             <div>
                 <h1 className="task_h1">Вопрос</h1>
-                <p className="task_p">Что является равенством, содержащим неизвестное значение, которое надо найти?</p>
+                <p className="task_p">Что возвращает операция XOR для двух одинаковых битов?</p>
+                <p className="task_p2">1) 0</p>
+                <p className="task_p2">2) 1</p>
+                <p className="task_p2">3) Зависит от значения битов</p>
+                <p className="task_p2">4) Ничего</p>
             </div>
             <div className="task_answer_main">
                 <div className="task_answer">
-                    <h1 className="task_h1">Ответ:</h1>
+                    <h1 className="task_h1">Ответ под номером:</h1>
                     <input value={answer} onChange={(e) => {newAnswer(e.target.value)}} className="input_task"/>
                 </div>
                 <Answerpr/>
@@ -73,4 +77,4 @@ const Task1 = () => {
     )
   }
   
-  export default Task1
+  export default Task7

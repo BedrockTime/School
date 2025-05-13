@@ -5,28 +5,6 @@ import Rename from "./rename"
 
 const Personal = () => {
     const {data: session}  = useSession()
-    const [content, setContent] = useState(0)
-
-    const Content = () => {
-        if (content === 0) {
-            return(
-                <div className="contentper_div">
-                    <div className="per_div">
-                        <img src={session.user.image}/>
-                        <div>
-                            <h1 className="per_h1">{localStorage.getItem("name") === null | localStorage.getItem("name") === "" ? `Имя` : localStorage.getItem("name")} {localStorage.getItem("surname") === null | localStorage.getItem("surname") === "" ? `Фамилия` : localStorage.getItem("surname")}</h1>
-                        </div>
-                    </div>
-                    <Rename/>
-                    <p className="per_p">Электронная почта: {session.user.email}</p>
-                </div>
-            )
-        } {
-            return(
-                <p>asdlkfsjkuasuftgu</p>
-            )
-        }
-    }
     
     if (session) {
         return(
@@ -39,10 +17,18 @@ const Personal = () => {
                     <h2 className="per_h1">Личный кабинет</h2>
                     <div className="per_content_div">
                         <div className="content_swap">
-                            <p onClick={() => setContent(0)}>Личный кабинет</p>
-                            <p onClick={() => setContent(1)}>Мои квесты</p>
+                            <Link className="per_link" href="/components/create">Создать квест</Link>
                         </div>
-                        <Content/>
+                        <div className="contentper_div">
+                            <div className="per_div">
+                                <img src={session.user.image}/>
+                                <div>
+                                    <h1 className="per_h1">{localStorage.getItem("name") === null | localStorage.getItem("name") === "" ? `Имя` : localStorage.getItem("name")} {localStorage.getItem("surname") === null | localStorage.getItem("surname") === "" ? `Фамилия` : localStorage.getItem("surname")}</h1>
+                                </div>
+                            </div>
+                            <Rename/>
+                            <p className="per_p">Электронная почта: {session.user.email}</p>
+                        </div>
                     </div>
                 </div>
             </div>

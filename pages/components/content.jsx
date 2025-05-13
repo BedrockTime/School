@@ -4,7 +4,7 @@ const Content = () => {
             <div className="content_text">
                 <h2 className="content_text_h2">ВОПЛОЩАЕМ МЕЧТУ УЧИТЕЛЯ</h2>
                 <h1 className="content_text_h1">Инновационный урок - это просто!</h1>
-                <p className="content_text_p">Используйте первые в мире образовательные веб‑квесты «Выберись из комнаты» для любой предметной области!</p>
+                <p className="content_text_p">Используйте первые в мире образовательные веб‑квесты «Найди предметы» для любой предметной области!</p>
             </div>
             <div className="triple_parent">
                 <div className="triple">
