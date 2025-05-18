@@ -67,22 +67,22 @@ const Create = () => {
         if (obj === "Математика") {
           return(
             <div onClick={() => {setOles1(0)}} className="create_object">
-                <p onClick={() => {setLes1("math1")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes1("math5")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes1("math1")}} className="obj_p">Тип 1 (действия с числами)</p>
+                <p onClick={() => {setLes1("math5")}} className="obj_p">Тип 2 (треугольники)</p>
             </div>
           )
         } else if (obj === "Физика") {
           return(
             <div onClick={() => {setOles1(0)}} className="create_object">
-                <p onClick={() => {setLes1("phys1")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes1("phys5")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes1("phys1")}} className="obj_p">Тип 1 (законы Ньютона)</p>
+                <p onClick={() => {setLes1("phys5")}} className="obj_p">Тип 2 (газы)</p>
             </div>
           )
         } {
           return(
             <div onClick={() => {setOles1(0)}} className="create_object">
-                <p onClick={() => {setLes1("info1")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes1("info5")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes1("info1")}} className="obj_p">Тип 1 (логика)</p>
+                <p onClick={() => {setLes1("info5")}} className="obj_p">Тип 2 (алгоритмы)</p>
             </div>
           )
         }
@@ -94,22 +94,22 @@ const Create = () => {
         if (obj === "Математика") {
           return(
             <div onClick={() => {setOles2(0)}} className="create_object">
-                <p onClick={() => {setLes2("math2")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes2("math6")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes2("math2")}} className="obj_p">Тип 1 (действия с числами)</p>
+                <p onClick={() => {setLes2("math6")}} className="obj_p">Тип 2 (треугольники)</p>
             </div>
           )
         } else if (obj === "Физика") {
           return(
             <div onClick={() => {setOles2(0)}} className="create_object">
-                <p onClick={() => {setLes2("phys2")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes2("phys6")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes2("phys2")}} className="obj_p">Тип 1 (законы Ньютона)</p>
+                <p onClick={() => {setLes2("phys6")}} className="obj_p">Тип 2 (газы)</p>
             </div>
           )
         } {
           return(
             <div onClick={() => {setOles2(0)}} className="create_object">
-                <p onClick={() => {setLes2("info2")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes2("info6")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes2("info2")}} className="obj_p">Тип 1 (логика)</p>
+                <p onClick={() => {setLes2("info6")}} className="obj_p">Тип 2 (алгоритмы)</p>
             </div>
           )
         }
@@ -121,22 +121,22 @@ const Create = () => {
         if (obj === "Математика") {
           return(
             <div onClick={() => {setOles3(0)}} className="create_object">
-                <p onClick={() => {setLes3("math3")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes3("math7")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes3("math3")}} className="obj_p">Тип 1 (действия с числами)</p>
+                <p onClick={() => {setLes3("math7")}} className="obj_p">Тип 2 (треугольники)</p>
             </div>
           )
         } else if (obj === "Физика") {
           return(
             <div onClick={() => {setOles3(0)}} className="create_object">
-                <p onClick={() => {setLes3("phys3")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes3("phys7")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes3("phys3")}} className="obj_p">Тип 1 (законы Ньютона)</p>
+                <p onClick={() => {setLes3("phys7")}} className="obj_p">Тип 2 (газы)</p>
             </div>
           )
         } {
           return(
             <div onClick={() => {setOles3(0)}} className="create_object">
-                <p onClick={() => {setLes3("info3")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes3("info7")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes3("info3")}} className="obj_p">Тип 1 (логика)</p>
+                <p onClick={() => {setLes3("info7")}} className="obj_p">Тип 2 (алгоритмы)</p>
             </div>
           )
         }
@@ -148,22 +148,22 @@ const Create = () => {
         if (obj === "Математика") {
           return(
             <div onClick={() => {setOles4(0)}} className="create_object">
-                <p onClick={() => {setLes4("math4")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes4("math8")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes4("math4")}} className="obj_p">Тип 1 (действия с числами)</p>
+                <p onClick={() => {setLes4("math8")}} className="obj_p">Тип 2 (треугольники)</p>
             </div>
           )
         } else if (obj === "Физика") {
           return(
             <div onClick={() => {setOles4(0)}} className="create_object">
-                <p onClick={() => {setLes4("phys4")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes4("phys8")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes4("phys4")}} className="obj_p">Тип 1 (законы Ньютона)</p>
+                <p onClick={() => {setLes4("phys8")}} className="obj_p">Тип 2 (газы)</p>
             </div>
           )
         } {
           return(
             <div onClick={() => {setOles4(0)}} className="create_object">
-                <p onClick={() => {setLes4("info4")}} className="obj_p">Тип 1</p>
-                <p onClick={() => {setLes4("info8")}} className="obj_p">Тип 2</p>
+                <p onClick={() => {setLes4("info4")}} className="obj_p">Тип 1 (логика)</p>
+                <p onClick={() => {setLes4("info8")}} className="obj_p">Тип 2 (алгоритмы)</p>
             </div>
           )
         }

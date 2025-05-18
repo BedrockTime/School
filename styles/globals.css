@@ -283,10 +283,6 @@ code {
   transition: 300ms;
 }
 
-.works_text_part:hover {
-  opacity: 50%;
-}
-
 .micro_line {
   background-color: #928787;
   width: 100%;
@@ -316,7 +312,7 @@ code {
 
 .works_h1{
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   width: 85%;
 }
 
@@ -798,7 +794,8 @@ code {
 
 .create_object {
   background-color: #2B2B2B;
-  width: 196px;
+  width: max-content;
+  min-width: 196px;
   padding: 10px 10px 10px 10px;
   margin-top: 10px;
   border-radius: 20px;

@@ -59,7 +59,7 @@ const Task6 = () => {
         <div className="task1_div">
             <div>
                 <h1 className="task_h1">Задача</h1>
-                <p className="task_p">Чему равно значение выражения (1 AND 0) OR (NOT 0) в двоичной системе?</p>
+                <p className="task_p">Чему равно значение выражения (1 AND 0) OR (NOT 0) по алгебре Буля?</p>
             </div>
             <div className="task_answer_main">
                 <div className="task_answer">

@@ -144,17 +144,16 @@ const TaskComplete = () => {
       if (compl < 4) {
         return(
           <div>
-              <h1 className="task_h1">Ой... Ты нашел не все предметы.</h1>
-              <h1 className="task_h1">Видимо придется выкручиваться как-то...</h1>
-              <h1 className="task_h1">Но всё равно спасибо!</h1>
+              <h1 className="task_h1">Ой... Не все задания решены верно.</h1>
+              <h1 className="task_h1">Повтори тему и попробуй еще раз</h1>
           </div>
         )
       } {
         return(
           <div>
-              <h1 className="task_h1">Спасибо тебе огромное!</h1>
-              <h1 className="task_h1">Обязательно воспользуюсь этими штуками.</h1>
-              <h1 className="task_h1">С меня ответы на К/Р по истории :)</h1>
+              <h1 className="task_h1">Класс!</h1>
+              <h1 className="task_h1">Все предметы найдены!</h1>
+              <h1 className="task_h1">Ты гений!</h1>
           </div>
         )
       }

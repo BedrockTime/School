@@ -49,7 +49,7 @@ const Taskmain = () => {
   return(
     <div className={`tm_osn_div${classtag}`}>
       <div className="dimka">
-        <p className="dimka_p">Привет! Помоги мне найти предметы для самостоятельной работе. Где искать я указал на интерфейсе</p>
+        <p className="dimka_p">Привет! Помоги мне найти предметы для самостоятельной работы. Где искать я указал на дисплее. Правильно решишь задачу - найдешь предмет.</p>
         <div className="yourphonlinging">
           <div className="yourphonlinging">
             <div className="student_png"/>
